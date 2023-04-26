@@ -11,11 +11,11 @@ export default function Dashboard() {
             <DashboardStatsGrid />
             <div className="flex flex-row gap-4 w-full">
                 <TransactionChart />
-                <BuyerProfilePieChart />
+                {/* <BuyerProfilePieChart /> */}
             </div>{' '}
             <div className="flex flex-row gap-4 w-full">
                 <RecentOrders />
-                <PopularProducts />
+                {/* <PopularProducts /> */}
             </div>{' '}
         </div>
     )

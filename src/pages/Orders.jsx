@@ -5,364 +5,116 @@ import { getOrderStatus } from '../lib/helpers'
 
 const orderData = [
     {
-        id: '1',
-        product_id: '4324',
-        customer_id: '23143',
-        customer_name: 'Shirley A. Lape',
-        order_date: '2022-05-17T03:24:00',
-        order_total: '$435.50',
-        current_order_status: 'PLACED',
-        shipment_address: 'Cottage Grove, OR 97424'
+        bill_ID: '1',
+        date: '2022-01-24',
+        billDetails: null,
+        total: 100,
+        userID: '1'
     },
     {
-        id: '7',
-        product_id: '7453',
-        customer_id: '96453',
-        customer_name: 'Ryan Carroll',
-        order_date: '2022-05-14T05:24:00',
-        order_total: '$96.35',
-        current_order_status: 'CONFIRMED',
-        shipment_address: 'Los Angeles, CA 90017'
+        bill_ID: '10',
+        date: '2022-02-06',
+        billDetails: null,
+        total: 50,
+        userID: '1'
     },
     {
-        id: '2',
-        product_id: '5434',
-        customer_id: '65345',
-        customer_name: 'Mason Nash',
-        order_date: '2022-05-17T07:14:00',
-        order_total: '$836.44',
-        current_order_status: 'SHIPPED',
-        shipment_address: 'Westminster, CA 92683'
+        bill_ID: '11',
+        date: '2022-03-24',
+        billDetails: null,
+        total: 200,
+        userID: '1'
     },
     {
-        id: '3',
-        product_id: '9854',
-        customer_id: '87832',
-        customer_name: 'Luke Parkin',
-        order_date: '2022-05-16T12:40:00',
-        order_total: '$334.50',
-        current_order_status: 'SHIPPED',
-        shipment_address: 'San Mateo, CA 94403'
+        bill_ID: '12',
+        date: '2022-04-25',
+        billDetails: null,
+        total: 300,
+        userID: '1'
     },
     {
-        id: '4',
-        product_id: '8763',
-        customer_id: '09832',
-        customer_name: 'Anthony Fry',
-        order_date: '2022-05-14T03:24:00',
-        order_total: '$876.00',
-        current_order_status: 'OUT_FOR_DELIVERY',
-        shipment_address: 'San Mateo, CA 94403'
+        bill_ID: '13',
+        date: '2022-12-26',
+        billDetails: null,
+        total: 100,
+        userID: '1'
     },
     {
-        id: '5',
-        product_id: '5627',
-        customer_id: '97632',
-        customer_name: 'Ryan Carroll',
-        order_date: '2022-05-14T05:24:00',
-        order_total: '$96.35',
-        current_order_status: 'DELIVERED',
-        shipment_address: 'Los Angeles, CA 90017'
+        bill_ID: '14',
+        date: '2022-11-20',
+        billDetails: null,
+        total: 50,
+        userID: '1'
     },
     {
-        id: '1',
-        product_id: '4324',
-        customer_id: '23143',
-        customer_name: 'Shirley A. Lape',
-        order_date: '2022-05-17T03:24:00',
-        order_total: '$435.50',
-        current_order_status: 'PLACED',
-        shipment_address: 'Cottage Grove, OR 97424'
+        bill_ID: '15',
+        date: '2022-05-26',
+        billDetails: null,
+        total: 50,
+        userID: '1'
     },
     {
-        id: '7',
-        product_id: '7453',
-        customer_id: '96453',
-        customer_name: 'Ryan Carroll',
-        order_date: '2022-05-14T05:24:00',
-        order_total: '$96.35',
-        current_order_status: 'CONFIRMED',
-        shipment_address: 'Los Angeles, CA 90017'
+        bill_ID: '16',
+        date: '2022-02-01',
+        billDetails: null,
+        total: 50,
+        userID: '1'
     },
     {
-        id: '2',
-        product_id: '5434',
-        customer_id: '65345',
-        customer_name: 'Mason Nash',
-        order_date: '2022-05-17T07:14:00',
-        order_total: '$836.44',
-        current_order_status: 'SHIPPED',
-        shipment_address: 'Westminster, CA 92683'
+        bill_ID: '2',
+        date: '2022-04-01',
+        billDetails: null,
+        total: 100,
+        userID: '1'
     },
     {
-        id: '3',
-        product_id: '9854',
-        customer_id: '87832',
-        customer_name: 'Luke Parkin',
-        order_date: '2022-05-16T12:40:00',
-        order_total: '$334.50',
-        current_order_status: 'SHIPPED',
-        shipment_address: 'San Mateo, CA 94403'
+        bill_ID: '20',
+        date: '2022-06-26',
+        billDetails: null,
+        total: 200,
+        userID: '1'
     },
     {
-        id: '4',
-        product_id: '8763',
-        customer_id: '09832',
-        customer_name: 'Anthony Fry',
-        order_date: '2022-05-14T03:24:00',
-        order_total: '$876.00',
-        current_order_status: 'OUT_FOR_DELIVERY',
-        shipment_address: 'San Mateo, CA 94403'
+        bill_ID: '3',
+        date: '2022-07-26',
+        billDetails: null,
+        total: 300,
+        userID: '1'
     },
     {
-        id: '5',
-        product_id: '5627',
-        customer_id: '97632',
-        customer_name: 'Ryan Carroll',
-        order_date: '2022-05-14T05:24:00',
-        order_total: '$96.35',
-        current_order_status: 'DELIVERED',
-        shipment_address: 'Los Angeles, CA 90017'
+        bill_ID: '4',
+        date: '2022-08-26',
+        billDetails: null,
+        total: 50,
+        userID: '1'
     },
     {
-        id: '1',
-        product_id: '4324',
-        customer_id: '23143',
-        customer_name: 'Shirley A. Lape',
-        order_date: '2022-05-17T03:24:00',
-        order_total: '$435.50',
-        current_order_status: 'PLACED',
-        shipment_address: 'Cottage Grove, OR 97424'
+        bill_ID: '5',
+        date: '2022-09-26',
+        billDetails: null,
+        total: 100,
+        userID: '1'
     },
     {
-        id: '7',
-        product_id: '7453',
-        customer_id: '96453',
-        customer_name: 'Ryan Carroll',
-        order_date: '2022-05-14T05:24:00',
-        order_total: '$96.35',
-        current_order_status: 'CONFIRMED',
-        shipment_address: 'Los Angeles, CA 90017'
+        bill_ID: '6',
+        date: '2022-07-26',
+        billDetails: null,
+        total: 200,
+        userID: '1'
     },
     {
-        id: '2',
-        product_id: '5434',
-        customer_id: '65345',
-        customer_name: 'Mason Nash',
-        order_date: '2022-05-17T07:14:00',
-        order_total: '$836.44',
-        current_order_status: 'SHIPPED',
-        shipment_address: 'Westminster, CA 92683'
+        bill_ID: '7',
+        date: '2022-10-26',
+        billDetails: null,
+        total: 300,
+        userID: '1'
     },
     {
-        id: '3',
-        product_id: '9854',
-        customer_id: '87832',
-        customer_name: 'Luke Parkin',
-        order_date: '2022-05-16T12:40:00',
-        order_total: '$334.50',
-        current_order_status: 'SHIPPED',
-        shipment_address: 'San Mateo, CA 94403'
-    },
-    {
-        id: '4',
-        product_id: '8763',
-        customer_id: '09832',
-        customer_name: 'Anthony Fry',
-        order_date: '2022-05-14T03:24:00',
-        order_total: '$876.00',
-        current_order_status: 'OUT_FOR_DELIVERY',
-        shipment_address: 'San Mateo, CA 94403'
-    },
-    {
-        id: '5',
-        product_id: '5627',
-        customer_id: '97632',
-        customer_name: 'Ryan Carroll',
-        order_date: '2022-05-14T05:24:00',
-        order_total: '$96.35',
-        current_order_status: 'DELIVERED',
-        shipment_address: 'Los Angeles, CA 90017'
-    },
-    {
-        id: '1',
-        product_id: '4324',
-        customer_id: '23143',
-        customer_name: 'Shirley A. Lape',
-        order_date: '2022-05-17T03:24:00',
-        order_total: '$435.50',
-        current_order_status: 'PLACED',
-        shipment_address: 'Cottage Grove, OR 97424'
-    },
-    {
-        id: '7',
-        product_id: '7453',
-        customer_id: '96453',
-        customer_name: 'Ryan Carroll',
-        order_date: '2022-05-14T05:24:00',
-        order_total: '$96.35',
-        current_order_status: 'CONFIRMED',
-        shipment_address: 'Los Angeles, CA 90017'
-    },
-    {
-        id: '2',
-        product_id: '5434',
-        customer_id: '65345',
-        customer_name: 'Mason Nash',
-        order_date: '2022-05-17T07:14:00',
-        order_total: '$836.44',
-        current_order_status: 'SHIPPED',
-        shipment_address: 'Westminster, CA 92683'
-    },
-    {
-        id: '3',
-        product_id: '9854',
-        customer_id: '87832',
-        customer_name: 'Luke Parkin',
-        order_date: '2022-05-16T12:40:00',
-        order_total: '$334.50',
-        current_order_status: 'SHIPPED',
-        shipment_address: 'San Mateo, CA 94403'
-    },
-    {
-        id: '4',
-        product_id: '8763',
-        customer_id: '09832',
-        customer_name: 'Anthony Fry',
-        order_date: '2022-05-14T03:24:00',
-        order_total: '$876.00',
-        current_order_status: 'OUT_FOR_DELIVERY',
-        shipment_address: 'San Mateo, CA 94403'
-    },
-    {
-        id: '5',
-        product_id: '5627',
-        customer_id: '97632',
-        customer_name: 'Ryan Carroll',
-        order_date: '2022-05-14T05:24:00',
-        order_total: '$96.35',
-        current_order_status: 'DELIVERED',
-        shipment_address: 'Los Angeles, CA 90017'
-    },
-    {
-        id: '1',
-        product_id: '4324',
-        customer_id: '23143',
-        customer_name: 'Shirley A. Lape',
-        order_date: '2022-05-17T03:24:00',
-        order_total: '$435.50',
-        current_order_status: 'PLACED',
-        shipment_address: 'Cottage Grove, OR 97424'
-    },
-    {
-        id: '7',
-        product_id: '7453',
-        customer_id: '96453',
-        customer_name: 'Ryan Carroll',
-        order_date: '2022-05-14T05:24:00',
-        order_total: '$96.35',
-        current_order_status: 'CONFIRMED',
-        shipment_address: 'Los Angeles, CA 90017'
-    },
-    {
-        id: '2',
-        product_id: '5434',
-        customer_id: '65345',
-        customer_name: 'Mason Nash',
-        order_date: '2022-05-17T07:14:00',
-        order_total: '$836.44',
-        current_order_status: 'SHIPPED',
-        shipment_address: 'Westminster, CA 92683'
-    },
-    {
-        id: '3',
-        product_id: '9854',
-        customer_id: '87832',
-        customer_name: 'Luke Parkin',
-        order_date: '2022-05-16T12:40:00',
-        order_total: '$334.50',
-        current_order_status: 'SHIPPED',
-        shipment_address: 'San Mateo, CA 94403'
-    },
-    {
-        id: '4',
-        product_id: '8763',
-        customer_id: '09832',
-        customer_name: 'Anthony Fry',
-        order_date: '2022-05-14T03:24:00',
-        order_total: '$876.00',
-        current_order_status: 'OUT_FOR_DELIVERY',
-        shipment_address: 'San Mateo, CA 94403'
-    },
-    {
-        id: '5',
-        product_id: '5627',
-        customer_id: '97632',
-        customer_name: 'Ryan Carroll',
-        order_date: '2022-05-14T05:24:00',
-        order_total: '$96.35',
-        current_order_status: 'DELIVERED',
-        shipment_address: 'Los Angeles, CA 90017'
-    },
-    {
-        id: '1',
-        product_id: '4324',
-        customer_id: '23143',
-        customer_name: 'Shirley A. Lape',
-        order_date: '2022-05-17T03:24:00',
-        order_total: '$435.50',
-        current_order_status: 'PLACED',
-        shipment_address: 'Cottage Grove, OR 97424'
-    },
-    {
-        id: '7',
-        product_id: '7453',
-        customer_id: '96453',
-        customer_name: 'Ryan Carroll',
-        order_date: '2022-05-14T05:24:00',
-        order_total: '$96.35',
-        current_order_status: 'CONFIRMED',
-        shipment_address: 'Los Angeles, CA 90017'
-    },
-    {
-        id: '2',
-        product_id: '5434',
-        customer_id: '65345',
-        customer_name: 'Mason Nash',
-        order_date: '2022-05-17T07:14:00',
-        order_total: '$836.44',
-        current_order_status: 'SHIPPED',
-        shipment_address: 'Westminster, CA 92683'
-    },
-    {
-        id: '3',
-        product_id: '9854',
-        customer_id: '87832',
-        customer_name: 'Luke Parkin',
-        order_date: '2022-05-16T12:40:00',
-        order_total: '$334.50',
-        current_order_status: 'SHIPPED',
-        shipment_address: 'San Mateo, CA 94403'
-    },
-    {
-        id: '4',
-        product_id: '8763',
-        customer_id: '09832',
-        customer_name: 'Anthony Fry',
-        order_date: '2022-05-14T03:24:00',
-        order_total: '$876.00',
-        current_order_status: 'OUT_FOR_DELIVERY',
-        shipment_address: 'San Mateo, CA 94403'
-    },
-    {
-        id: '5',
-        product_id: '5627',
-        customer_id: '97632',
-        customer_name: 'Ryan Carroll',
-        order_date: '2022-05-14T05:24:00',
-        order_total: '$96.35',
-        current_order_status: 'DELIVERED',
-        shipment_address: 'Los Angeles, CA 90017'
+        bill_ID: '8',
+        date: '2022-11-26',
+        billDetails: null,
+        total: 200,
+        userID: '1'
     }
 ]
 
@@ -374,8 +126,10 @@ export default function Orders() {
                 <table className="w-full text-gray-700">
                     <thead>
                         <tr>
-                            <th> ID </th> <th> Product ID </th> <th> Customer Name </th> <th> Order Date </th>{' '}
-                            <th> Order Total </th> <th> Shipping Address </th> <th> Order Status </th>{' '}
+                            <th> Bill ID </th>
+                            <th> date </th>
+                            <th> total </th>
+                            <th> User ID </th>
                         </tr>{' '}
                     </thead>{' '}
                     <tbody>
@@ -383,17 +137,10 @@ export default function Orders() {
                         {orderData.map((order) => (
                             <tr key={order.id}>
                                 <td>
-                                    <Link to={`/order/${order.id}`}> #{order.id} </Link>{' '}
+                                    <Link to={`/orders/${order.bill_ID}`}> {order.bill_ID} </Link>{' '}
                                 </td>{' '}
-                                <td>
-                                    <Link to={`/product/${order.product_id}`}> #{order.product_id} </Link>{' '}
-                                </td>{' '}
-                                <td>
-                                    <Link to={`/customer/${order.customer_id}`}> {order.customer_name} </Link>{' '}
-                                </td>{' '}
-                                <td> {format(new Date(order.order_date), 'dd MMM yyyy')} </td>{' '}
-                                <td> {order.order_total} </td> <td> {order.shipment_address} </td>{' '}
-                                <td> {getOrderStatus(order.current_order_status)} </td>{' '}
+                                <td> {format(new Date(order.date), 'dd MMM yyyy')} </td> <td> {order.total} </td>
+                                <td> {getOrderStatus(order.userID)} </td>{' '}
                             </tr>
                         ))}{' '}
                     </tbody>{' '}
